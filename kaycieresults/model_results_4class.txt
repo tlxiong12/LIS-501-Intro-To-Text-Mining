@@ -1,0 +1,42 @@
+GENERAL MODEL (Twitter RoBERTa) — 4 CLASS
+                 precision    recall  f1-score   support
+
+       Negative       0.33      0.60      0.43        10
+Neutral-unclear       0.12      0.60      0.19         5
+          Mixed       0.00      0.00      0.00        17
+       Positive       0.67      0.22      0.33        18
+
+       accuracy                           0.26        50
+      macro avg       0.28      0.36      0.24        50
+   weighted avg       0.32      0.26      0.23        50
+
+
+LYRIC-ADJACENT MODEL (Emotion RoBERTa) — 4 CLASS
+                 precision    recall  f1-score   support
+
+       Negative       0.29      0.80      0.42        10
+Neutral-unclear       0.13      0.40      0.20         5
+          Mixed       0.00      0.00      0.00        17
+       Positive       0.29      0.11      0.16        18
+
+       accuracy                           0.24        50
+      macro avg       0.18      0.33      0.20        50
+   weighted avg       0.17      0.24      0.16        50
+
+
+Total songs: 50
+Model 1 exact 4-class errors: 37
+Model 2 exact 4-class errors: 38
+Both models wrong (4-class): 34
+Model 2 better cases (4-class exact match): 3
+Model 1 better cases (4-class exact match): 4
+
+Error type distribution:
+error_type
+other                                 9
+metaphorical/performative language    8
+polarity inversion                    7
+slang/AAVE                            6
+narrative voice                       2
+irony/sarcasm                         2
+Name: count, dtype: int64
