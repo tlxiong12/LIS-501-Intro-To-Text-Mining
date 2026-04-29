@@ -1,1 +1,3 @@
-This is our codebase
+For this class, we had a project evaluated the efficacy of various NLP and machine learning architectures—including RoBERTa, BERTopic, and SVM—in performing sentiment 
+analysis on a musical dataset. By benchmarking model metrics like F1 scores against a manually annotated subset of songs and scholarly literature, the study provided a rigorous 
+comparison between algorithmic performance and human interpretation.
